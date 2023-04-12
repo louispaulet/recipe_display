@@ -1,0 +1,11 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#recipe-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}

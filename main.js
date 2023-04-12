@@ -50,6 +50,17 @@ function displayRecipeDropdown() {
   container.appendChild(select);
 }
 
+function updateIngredientQuantities(recipe, newQuantity) {
+  const originalYield = recipe.yield.quantity;
+  const ratio = newQuantity / originalYield;
+
+  recipe.ingredients.forEach((ingredient) => {
+    ingredient.quantity = ingredient.quantity * ratio;
+  });
+
+  return recipe;
+}
+
 function clearRecipeContainer() {
   const container = document.getElementById("recipe-container");
   while (container.firstChild) {
@@ -57,8 +68,13 @@ function clearRecipeContainer() {
   }
 }
 
-function displayRecipe(recipe) {
+function displayRecipe(recipe, newYield=null) {
   clearRecipeContainer();
+  
+    if (newYield && newYield > 0) {
+        recipe = updateIngredientQuantities(recipe, newYield);
+        recipe.yield.quantity = newYield;
+    }
   
   const container = document.getElementById("recipe-container");
 
@@ -70,6 +86,29 @@ function displayRecipe(recipe) {
   const detailsRow = document.createElement("div");
   detailsRow.classList.add("row", "mb-4");
   container.appendChild(detailsRow);
+  
+  const decreaseYieldButton = document.createElement("button");
+  decreaseYieldButton.classList.add("btn", "btn-outline-secondary", "me-2");
+  decreaseYieldButton.innerHTML = '<i class="fas fa-minus"></i>';
+  detailsRow.appendChild(decreaseYieldButton);
+
+  const increaseYieldButton = document.createElement("button");
+  increaseYieldButton.classList.add("btn", "btn-outline-secondary");
+  increaseYieldButton.innerHTML = '<i class="fas fa-plus"></i>';
+  detailsRow.appendChild(increaseYieldButton);
+
+  // Add event listeners for the +/- buttons
+  decreaseYieldButton.addEventListener("click", () => {
+    const currentYield = parseInt(recipe.yield.quantity, 10);
+    if (currentYield > 1) {
+      displayRecipe(recipe, currentYield - 1);
+    }
+  });
+
+  increaseYieldButton.addEventListener("click", () => {
+    const currentYield = parseInt(recipe.yield.quantity, 10);
+    displayRecipe(recipe, currentYield + 1);
+  });
 
   const yieldInfo = document.createElement("p");
   yieldInfo.classList.add("col-sm", "text-center");

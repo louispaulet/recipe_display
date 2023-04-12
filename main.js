@@ -8,9 +8,9 @@ function createIngredientsList(ingredients) {
   list.classList.add("list-unstyled");
   ingredients.forEach(ingredient => {
     const listItem = document.createElement("li");
-    listItem.innerText = `${ingredient.quantity} ${ingredient.unit} ${ingredient.name}`;
+    listItem.innerHTML = `<i class="fas fa-utensils me-2"></i>${ingredient.quantity} ${ingredient.unit} ${ingredient.name}`;
     if (ingredient.preparation) {
-      listItem.innerText += ` (${ingredient.preparation})`;
+      listItem.innerHTML += ` (${ingredient.preparation})`;
     }
     list.appendChild(listItem);
   });
@@ -20,10 +20,10 @@ function createIngredientsList(ingredients) {
 function createInstructionsList(instructions) {
   const list = document.createElement("ol");
   list.classList.add("list-group", "list-group-numbered");
-  instructions.forEach(instruction => {
+  instructions.forEach((instruction, index) => {
     const listItem = document.createElement("li");
     listItem.classList.add("list-group-item");
-    listItem.innerText = instruction;
+    listItem.innerHTML = `<i class="fas fa-chevron-right me-2"></i>${instruction}`;
     list.appendChild(listItem);
   });
   return list;
@@ -72,30 +72,31 @@ function displayRecipe(recipe) {
 
   const yieldInfo = document.createElement("p");
   yieldInfo.classList.add("col-sm", "text-center");
-  yieldInfo.innerText = `Yield: ${recipe.yield.quantity} ${recipe.yield.unit}`;
+  yieldInfo.innerHTML = `<i class="fas fa-chart-pie me-2"></i>Yield: ${recipe.yield.quantity} ${recipe.yield.unit}`;
   detailsRow.appendChild(yieldInfo);
 
   const prepTime = document.createElement("p");
   prepTime.classList.add("col-sm", "text-center");
-  prepTime.innerText = `Prep Time: ${recipe.prep_time.quantity} ${recipe.prep_time.unit}`;
+  prepTime.innerHTML = `<i class="fas fa-clock me-2"></i>Prep Time: ${recipe.prep_time.quantity} ${recipe.prep_time.unit}`;
   detailsRow.appendChild(prepTime);
 
   const cookTime = document.createElement("p");
   cookTime.classList.add("col-sm", "text-center");
-  cookTime.innerText = `Cook Time: ${recipe.cook_time.quantity} ${recipe.cook_time.unit}`;
+  cookTime.innerHTML = `<i class="fas fa-hourglass-start me-2"></i>Cook Time: ${recipe.cook_time.quantity} ${recipe.cook_time.unit}`;
   detailsRow.appendChild(cookTime);
 
   const ingredientsHeader = document.createElement("h2");
   ingredientsHeader.classList.add("mb-3");
-  ingredientsHeader.innerText = "Ingredients";
+  ingredientsHeader.innerHTML = `<i class="fas fa-shopping-basket me-2"></i>Ingredients`;
   container.appendChild(ingredientsHeader);
-
+  
   const ingredientsList = createIngredientsList(recipe.ingredients);
   container.appendChild(ingredientsList);
 
+
   const instructionsHeader = document.createElement("h2");
   instructionsHeader.classList.add("mb-3");
-  instructionsHeader.innerText = "Instructions";
+  instructionsHeader.innerHTML = `<i class="fas fa-list-ol me-2"></i>Instructions`;
   container.appendChild(instructionsHeader);
 
   const instructionsList = createInstructionsList(recipe.instructions);

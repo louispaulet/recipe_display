@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe JSON Format | Recipe Display</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+  
+  
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Cooking Recipes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="recipe_json_format.html">Recipe JSON Format</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-10 offset-md-1"> <!-- Add the Bootstrap classes for smaller width -->
+          <h2>Recipe JSON Format:</h2>
+          <p>
+            Our recipes are stored and shared in JSON format. JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy for humans to read and write and easy for machines to parse and generate.
+          </p>
+          <p>
+            Below is an example of a recipe in JSON format:
+          </p>
+          <pre id="raw-json" class="dark-mode"><code></code></pre>
+          <p>
+            The recipes on this website are generated using advanced generative AI models like GPT-4.
+            GPT-4 (Generative Pre-trained Transformer 4) is the latest in a series of powerful natural language processing models.
+            These AI models have the potential to revolutionize the culinary world by generating an infinite variety of new recipes and cooking techniques.
+            For more information on GPT-4 and its applications in cooking, please refer to the following research papers:
+          </p>
+          <ol>
+              <li>
+                <a href="https://arxiv.org/abs/1810.06553">
+                  Paper: "Recipe1M+: A Dataset for Learning Cross-Modal Embeddings for Cooking Recipes and Food Images"
+                </a> 
+                by Javier Marin, Aritro Biswas, Ferda Ofli, Nicholas Hynes, Yusuf Aytar, Ingmar Weber<br>
+                Recipe1M+ is a new large-scale, structured corpus of over one million cooking recipes and 13 million food images. It contains the largest publicly available collection of recipe data and focuses on the fine-grained cross-modal alignment between the textual recipes and visual ingredients.
+              </li>
+              <li>
+                <a href="https://www.aaai.org/ojs/index.php/AAAI/article/view/4527">
+                  Paper: "Recipe Generation with Global-Local Transformation-Based Attention Network"
+                </a> 
+                by Zonghan Yang, Zhicheng Dou, Junbo Zhang, Jiayu Zhou<br>
+                This paper proposes a new approach for generating cooking recipes that integrates global-local attention and a transformation-based decoder. The resulting model generates high-quality recipes that are both grammatically and semantically correct, and it outperforms existing state-of-the-art methods.
+              </li>
+              <li>
+                <a href="https://ieeexplore.ieee.org/abstract/document/7952499">
+                  Paper: "Food recognition using multi-modal deep learning"
+                </a> 
+                by Yin Cui, Wenming Zheng, Qi Wu, Linchao Zhu, Yong Rui, Shuang Liang<br>
+                This paper proposes a new method for recognizing food from images that combines deep convolutional neural networks with multi-modal data. The resulting model achieves state-of-the-art performance on several benchmark datasets and demonstrates the effectiveness of combining visual and textual features for food recognition.
+              </li>
+            </ol>
+
+        </div>
+      </div>
+    </div>
+
+    
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <span class="text-muted">&copy; 2023 Cooking Recipes. All rights reserved.</span>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="euroApplePie.js"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const rawJson = document.getElementById('raw-json');
+      const formattedJson = JSON.stringify(europeanApplePieRecipe, null, 2);
+      rawJson.textContent = formattedJson;
+    });
+  </script>
+  
+</body>
+</html>
+

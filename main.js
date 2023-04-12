@@ -1,6 +1,7 @@
 const recipes = [
   { name: "Apple Pie", data: applePieRecipe.recipe },
-  { name: "Chocolate Chip Cookies", data: newRecipe.recipe }
+  { name: "Chocolate Chip Cookies", data: newRecipe.recipe },
+  { name: "European Apple Pie", data: europeanApplePieRecipe.recipe }
 ];
 
 function createIngredientsList(ingredients) {

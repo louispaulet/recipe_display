@@ -87,15 +87,29 @@ function displayRecipe(recipe, newYield=null) {
   detailsRow.classList.add("row", "mb-4");
   container.appendChild(detailsRow);
   
-  const decreaseYieldButton = document.createElement("button");
-  decreaseYieldButton.classList.add("btn", "btn-outline-secondary", "me-2");
-  decreaseYieldButton.innerHTML = '<i class="fas fa-minus"></i>';
-  detailsRow.appendChild(decreaseYieldButton);
+  const yieldInfo = document.createElement("p");
+  yieldInfo.classList.add("col-sm", "text-center");
+  yieldInfo.innerHTML = `<i class="fas fa-chart-pie me-2"></i>Yield: ${recipe.yield.quantity} ${recipe.yield.unit}`;
+  //detailsRow.appendChild(yieldInfo);
+  
+  const yieldWrapper = document.createElement("div");
+  yieldWrapper.classList.add("col-sm", "text-center", "d-flex", "align-items-center", "justify-content-center", "align-baseline");
+  detailsRow.appendChild(yieldWrapper);
 
-  const increaseYieldButton = document.createElement("button");
-  increaseYieldButton.classList.add("btn", "btn-outline-secondary");
-  increaseYieldButton.innerHTML = '<i class="fas fa-plus"></i>';
-  detailsRow.appendChild(increaseYieldButton);
+    const decreaseYieldButton = document.createElement("button");
+    decreaseYieldButton.classList.add("btn", "btn-outline-secondary", "btn-sm", "me-1", "align-baseline");
+    decreaseYieldButton.innerHTML = '<i class="fas fa-minus"></i> Remove serving';
+    yieldWrapper.appendChild(decreaseYieldButton);
+
+    yieldWrapper.appendChild(yieldInfo);
+
+    const increaseYieldButton = document.createElement("button");
+    increaseYieldButton.classList.add("btn", "btn-outline-secondary", "btn-sm", "ms-1", "align-baseline");
+    increaseYieldButton.innerHTML = '<i class="fas fa-plus"></i> Add serving';
+    yieldWrapper.appendChild(increaseYieldButton);
+
+  
+  
 
   // Add event listeners for the +/- buttons
   decreaseYieldButton.addEventListener("click", () => {
@@ -109,11 +123,6 @@ function displayRecipe(recipe, newYield=null) {
     const currentYield = parseInt(recipe.yield.quantity, 10);
     displayRecipe(recipe, currentYield + 1);
   });
-
-  const yieldInfo = document.createElement("p");
-  yieldInfo.classList.add("col-sm", "text-center");
-  yieldInfo.innerHTML = `<i class="fas fa-chart-pie me-2"></i>Yield: ${recipe.yield.quantity} ${recipe.yield.unit}`;
-  detailsRow.appendChild(yieldInfo);
 
   const prepTime = document.createElement("p");
   prepTime.classList.add("col-sm", "text-center");

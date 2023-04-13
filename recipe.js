@@ -81,3 +81,107 @@ const applePieRecipe = {
     ]
   }
 };
+
+
+const truffledBresseChickenRecipe = {
+"recipe": {
+"title": "Truffled Bresse Chicken in Bladder",
+"author": "Jane Doe",
+"date_published": "2023-04-13",
+"yield": {
+"quantity": 4,
+"unit": "servings"
+},
+"prep_time": {
+"quantity": 45,
+"unit": "minutes"
+},
+"cook_time": {
+"quantity": 120,
+"unit": "minutes"
+},
+"ingredients": [
+{
+"name": "Bresse chicken",
+"quantity": 1,
+"unit": "whole",
+"preparation": "cleaned and giblets removed"
+},
+{
+"name": "black truffle",
+"quantity": 2,
+"unit": "ounces",
+"preparation": "sliced"
+},
+{
+"name": "pig's bladder",
+"quantity": 1,
+"unit": "large",
+"preparation": "cleaned and soaked in cold water"
+},
+{
+"name": "unsalted butter",
+"quantity": 4,
+"unit": "tablespoons"
+},
+{
+"name": "vin jaune",
+"quantity": 2,
+"unit": "cups"
+},
+{
+"name": "chicken stock",
+"quantity": 2,
+"unit": "cups"
+},
+{
+"name": "shallots",
+"quantity": 3,
+"unit": "pieces",
+"preparation": "finely chopped"
+},
+{
+"name": "heirloom vegetables",
+"quantity": 4,
+"unit": "cups",
+"preparation": "cleaned and cut into bite-sized pieces"
+},
+{
+"name": "salt",
+"quantity": "to taste"
+},
+{
+"name": "pepper",
+"quantity": "to taste"
+}
+],
+"instructions": [
+"Preheat the oven to 350°F (180°C).",
+"Carefully slide your fingers under the skin of the chicken to loosen it from the meat. Insert the sliced truffles between the skin and the meat, distributing them evenly.",
+"Season the chicken cavity with salt and pepper, and truss the chicken.",
+"Melt 2 tablespoons of butter in a large ovenproof pot or Dutch oven. Brown the chicken on all sides over medium heat. Remove the chicken from the pot and set aside.",
+"In the same pot, sauté the shallots until soft and translucent. Add the vin jaune and chicken stock, and bring the mixture to a boil. Reduce the heat and let it simmer for 5 minutes.",
+"Place the trussed chicken into the soaked pig's bladder. Carefully tie the bladder closed with kitchen twine, ensuring it is sealed tightly.",
+"Place the chicken in the bladder into the pot with the vin jaune sauce. Cover the pot and place it in the preheated oven. Cook for 1 hour and 30 minutes.",
+"While the chicken is cooking, prepare the heirloom vegetables. In a separate pan, melt the remaining 2 tablespoons of butter and sauté the vegetables until they are tender and slightly caramelized.",
+"Once the chicken is cooked, carefully remove it from the bladder and let it rest for 10 minutes.",
+"Carve the chicken into portions and serve on a platter or individual plates.",
+"Place the heirloom vegetables around the chicken.",
+"Bring the vin jaune sauce to a boil on the stovetop and let it reduce slightly. Season with salt and pepper to taste.",
+"Drizzle the sauce over the chicken and vegetables.",
+"Serve the Truffled Bresse Chicken in Bladder with Vin Jaune Sauce and Heirloom Vegetables immediately, and enjoy this luxurious and unique dish."
+],
+"notes": [
+"The pig's bladder can be sourced from a specialty butcher or online. Be sure to order ahead of time, as it may not be readily available.",
+"If you cannot find Bresse chicken, you can substitute it with a high-quality free-range chicken.",
+"Feel free to use any combination of heirloom vegetables, such as carrots, parsnips, turnips, or beets."
+],
+"tags": [
+"main course",
+"chicken",
+"truffle",
+"vin jaune",
+"heirloom vegetables"
+]
+}
+};

@@ -344,3 +344,89 @@ const truffledBresseChickenRecipe = {
 ]
 }
 };
+
+const decadentTiramisuRecipe = {
+  "recipe": {
+    "title": "Decadent Tiramisu",
+    "author": "Jane Doe",
+    "date_published": "2023-04-13",
+    "yield": {
+      "quantity": 8,
+      "unit": "servings"
+    },
+    "prep_time": {
+      "quantity": 30,
+      "unit": "minutes"
+    },
+    "cook_time": {
+      "quantity": 240,
+      "unit": "minutes"
+    },
+    "ingredients": [
+      {
+        "name": "egg yolks",
+        "quantity": 6,
+        "unit": "large"
+      },
+      {
+        "name": "granulated sugar",
+        "quantity": 200,
+        "unit": "grams"
+      },
+      {
+        "name": "mascarpone cheese",
+        "quantity": 500,
+        "unit": "grams"
+      },
+      {
+        "name": "heavy cream",
+        "quantity": 350,
+        "unit": "milliliters"
+      },
+      {
+        "name": "strong coffee",
+        "quantity": 500,
+        "unit": "milliliters"
+      },
+      {
+        "name": "Italian liqueur (e.g., Marsala, Amaretto, or Frangelico)",
+        "quantity": 120,
+        "unit": "milliliters"
+      },
+      {
+        "name": "ladyfinger biscuits",
+        "quantity": 40,
+        "unit": "pieces"
+      },
+      {
+        "name": "unsweetened cocoa powder",
+        "quantity": 30,
+        "unit": "grams"
+      }
+    ],
+    "instructions": [
+      "In a large heatproof bowl, whisk together the egg yolks and sugar. Place the bowl over a pot of simmering water and continue whisking until the mixture reaches a temperature of 160°F (70°C) and thickens. Remove from heat and allow to cool slightly.",
+      "Whisk the mascarpone cheese into the egg yolk mixture until smooth.",
+      "In a separate bowl, whip the heavy cream until stiff peaks form. Gently fold the whipped cream into the mascarpone and egg yolk mixture.",
+      "In a shallow dish, combine the strong coffee and Italian liqueur.",
+      "Dip each ladyfinger biscuit briefly into the coffee and liqueur mixture, ensuring that they are moist but not soaked.",
+      "Arrange a layer of dipped ladyfingers in the bottom of a 9x13-inch (23x33 cm) dish or a similar-sized serving dish.",
+      "Spread half of the mascarpone mixture over the ladyfingers, ensuring an even layer.",
+      "Repeat with another layer of dipped ladyfingers and the remaining mascarpone mixture.",
+      "Dust the top of the tiramisu with unsweetened cocoa powder.",
+      "Cover and refrigerate the tiramisu for at least 4 hours, or preferably overnight, to allow the flavors to meld together.",
+      "Serve the Decadent Tiramisu chilled and enjoy this rich, indulgent dessert."
+    ],
+    "notes": [
+      "You can use a mix of Italian liqueurs or choose your favorite one.",
+      "If you prefer a stronger coffee flavor, adjust the coffee and liqueur ratio to your liking."
+    ],
+    "tags": [
+      "dessert",
+      "tiramisu",
+      "Italian",
+      "coffee",
+      "alcohol"
+    ]
+  }
+};

@@ -2,6 +2,7 @@ const recipes = [
   { name: "Apple Pie", data: applePieRecipe.recipe },
   { name: "Chocolate Chip Cookies", data: newRecipe.recipe },
   { name: "Truffled Bresse chicken", data: truffledBresseChickenRecipe.recipe },
+  { name: "Decadent Tiramisu", data: decadentTiramisuRecipe.recipe },
   { name: "European Apple Pie", data: europeanApplePieRecipe.recipe }
 ];
 

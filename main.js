@@ -69,16 +69,25 @@ function displayRecipeDropdown(initialRecipeIndex) {
 }
 
 
-
-function copyUrlToClipboard() {
+function copyUrlToClipboard(shareButton) {
   const el = document.createElement('textarea');
   el.value = window.location.href;
   document.body.appendChild(el);
   el.select();
   document.execCommand('copy');
   document.body.removeChild(el);
-  alert('Recipe URL copied to clipboard!');
+
+  // Update the share button style and text
+  shareButton.classList.add('btn-outline-success');
+  shareButton.innerHTML = '<i class="fas fa-check"></i> Link copied';
+
+  // Reset the button style and text after 5 seconds
+  setTimeout(() => {
+    shareButton.classList.remove('btn-success');
+    shareButton.innerHTML = '<i class="fas fa-share"></i> Share this recipe!';
+  }, 1000);
 }
+
 
 function updateIngredientQuantities(recipe, newQuantity) {
   const originalYield = recipe.yield.quantity;
@@ -116,13 +125,17 @@ function displayRecipe(recipe, newYield=null) {
   const detailsRow = document.createElement("div");
   detailsRow.classList.add("row", "mb-4");
   
+    const shareButtonWrapper = document.createElement("div");
+    shareButtonWrapper.classList.add("col-sm", "text-center", "d-flex", "align-items-center", "justify-content-center", "align-baseline");
+    detailsRow.appendChild(shareButtonWrapper);
+
     const shareButton = document.createElement("button");
-    shareButton.classList.add("btn", "btn-outline-secondary", "btn-sm", "ms-1", "align-baseline");
-    shareButton.innerHTML = '<i class="fas fa-share"></i> Share';
-    detailsRow.appendChild(shareButton);
+    shareButton.classList.add("btn", "btn-outline-secondary", "btn-sm");
+    shareButton.innerHTML = '<i class="fas fa-share"></i> Share this recipe!';
+    shareButtonWrapper.appendChild(shareButton);
 
     shareButton.addEventListener("click", () => {
-      copyUrlToClipboard();
+      copyUrlToClipboard(shareButton);
     });
 
   container.appendChild(detailsRow);

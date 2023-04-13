@@ -3,6 +3,11 @@ const recipes = [
   { name: "Chocolate Chip Cookies", data: newRecipe.recipe },
   { name: "Truffled Bresse chicken", data: truffledBresseChickenRecipe.recipe },
   { name: "Decadent Tiramisu", data: decadentTiramisuRecipe.recipe },
+  { name: "Classic roasted ortolan", data: classicRoastedOrtolanRecipe.recipe },
+  { name: "Tornedos Rossini", data: tournedosRossiniRecipe.recipe },
+  
+  { name: "Lobster Thermidor", data: lobsterThermidorRecipe .recipe },
+  
   { name: "European Apple Pie", data: europeanApplePieRecipe.recipe }
 ];
 

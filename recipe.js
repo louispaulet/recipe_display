@@ -430,3 +430,280 @@ const decadentTiramisuRecipe = {
     ]
   }
 };
+
+const classicRoastedOrtolanRecipe = {
+"recipe": {
+"title": "Classic Roasted Ortolan",
+"author": "John Smith",
+"date_published": "2023-04-13",
+"yield": {
+"quantity": 4,
+"unit": "servings"
+},
+"prep_time": {
+"quantity": 30,
+"unit": "minutes"
+},
+"cook_time": {
+"quantity": 10,
+"unit": "minutes"
+},
+"ingredients": [
+{
+"name": "ortolans",
+"quantity": 4,
+"unit": "whole",
+"preparation": "captured, fattened, and killed humanely"
+},
+{
+"name": "unsalted butter",
+"quantity": 4,
+"unit": "tablespoons",
+"preparation": "melted"
+},
+{
+"name": "salt",
+"quantity": "to taste"
+},
+{
+"name": "pepper",
+"quantity": "to taste"
+}
+],
+"instructions": [
+"Preheat your oven to 450°F (230°C).",
+"Prepare the ortolans by plucking and cleaning them, removing the head, and ensuring the innards are removed.",
+"Season the ortolans with salt and pepper.",
+"Brush the ortolans with melted butter, ensuring they are evenly coated.",
+"Place the ortolans on a wire rack set over a rimmed baking sheet.",
+"Roast the ortolans in the preheated oven for 8 to 10 minutes, or until the skin is golden brown and crispy.",
+"Remove the ortolans from the oven and let them rest for a few minutes.",
+"Serve the Classic Roasted Ortolan immediately. Traditionally, they were eaten whole, bones and all, with a large napkin draped over the diner's head to preserve the aromas and hide the act of eating from view."
+],
+"notes": [
+"Eating ortolan is illegal in several countries, including France, due to the endangered status of the bird and concerns over animal welfare. This recipe is provided for historical context only, and we do not endorse or promote the consumption of endangered species."
+],
+"tags": [
+"main course",
+"ortolan",
+"roasted"
+]
+}
+};
+
+
+const tournedosRossiniRecipe = {
+  "recipe": {
+    "title": "Tournedos Rossini",
+    "author": "Jane Doe",
+    "date_published": "2023-04-13",
+    "yield": {
+      "quantity": 4,
+      "unit": "servings"
+    },
+    "prep_time": {
+      "quantity": 15,
+      "unit": "minutes"
+    },
+    "cook_time": {
+      "quantity": 20,
+      "unit": "minutes"
+    },
+    "ingredients": [
+      {
+        "name": "beef fillet steaks",
+        "quantity": 4,
+        "unit": "pieces",
+        "preparation": "tournedos, about 150g each"
+      },
+      {
+        "name": "foie gras",
+        "quantity": 200,
+        "unit": "grams",
+        "preparation": "cut into thick slices"
+      },
+      {
+        "name": "black truffle",
+        "quantity": 30,
+        "unit": "grams",
+        "preparation": "sliced"
+      },
+      {
+        "name": "brioche",
+        "quantity": 4,
+        "unit": "slices",
+        "preparation": "cut into round shapes similar in size to the steaks"
+      },
+      {
+        "name": "unsalted butter",
+        "quantity": 50,
+        "unit": "grams"
+      },
+      {
+        "name": "Madeira wine",
+        "quantity": 100,
+        "unit": "milliliters"
+      },
+      {
+        "name": "veal demi-glace",
+        "quantity": 200,
+        "unit": "milliliters"
+      },
+      {
+        "name": "salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "instructions": [
+      "Season the beef fillet steaks with salt and pepper.",
+      "In a large skillet, melt half of the butter over medium-high heat. Sear the steaks for about 2-3 minutes per side, or until they reach your desired level of doneness. Remove the steaks from the skillet and let them rest.",
+      "In the same skillet, cook the foie gras slices over medium heat for about 1-2 minutes per side, until golden and slightly crisp. Remove the foie gras from the skillet and set aside.",
+      "Preheat your oven to 180°C (350°F).",
+      "Place the brioche slices on a baking sheet and toast them in the preheated oven for about 5 minutes, or until golden and crisp.",
+      "To make the sauce, remove the excess fat from the skillet used for the steaks and foie gras. Add the Madeira wine and let it reduce by half over medium heat. Add the veal demi-glace and stir to combine. Cook the sauce for a few minutes until it thickens slightly. Add the remaining butter and stir until it is fully incorporated. Season with salt and pepper to taste.",
+      "To assemble the dish, place each toasted brioche round on a plate. Top with a beef fillet steak, followed by a slice of foie gras. Garnish with black truffle slices.",
+      "Drizzle the Madeira sauce over the tournedos and serve immediately."
+    ],
+    "notes": [
+      "You can adjust the amount of truffle to your preference or budget. Alternatively, you can use truffle oil or truffle butter for a more affordable option.",
+        "If you cannot find veal demi-glace, you can use beef demi-glace or a high-quality beef stock reduced to the desired consistency."
+],
+"tags": [
+  "main course",
+  "tournedos",
+  "rossini",
+  "beef",
+  "foie gras",
+  "truffle",
+  "Madeira"
+]
+}
+};
+
+const lobsterThermidorRecipe = {
+  "recipe": {
+    "title": "Lobster Thermidor",
+    "author": "Jane Doe",
+    "date_published": "2023-04-13",
+    "yield": {
+      "quantity": 4,
+      "unit": "servings"
+    },
+    "prep_time": {
+      "quantity": 30,
+      "unit": "minutes"
+    },
+    "cook_time": {
+      "quantity": 40,
+      "unit": "minutes"
+    },
+    "ingredients": [
+      {
+        "name": "live lobsters",
+        "quantity": 2,
+        "unit": "whole",
+        "preparation": "about 1.5 kg each"
+      },
+      {
+        "name": "unsalted butter",
+        "quantity": 60,
+        "unit": "grams"
+      },
+      {
+        "name": "shallots",
+        "quantity": 2,
+        "unit": "pieces",
+        "preparation": "finely chopped"
+      },
+      {
+        "name": "white mushrooms",
+        "quantity": 200,
+        "unit": "grams",
+        "preparation": "finely chopped"
+      },
+      {
+        "name": "cognac",
+        "quantity": 60,
+        "unit": "milliliters"
+      },
+      {
+        "name": "dry white wine",
+        "quantity": 250,
+        "unit": "milliliters"
+      },
+      {
+        "name": "fish stock",
+        "quantity": 250,
+        "unit": "milliliters"
+      },
+      {
+        "name": "heavy cream",
+        "quantity": 250,
+        "unit": "milliliters"
+      },
+      {
+        "name": "Dijon mustard",
+        "quantity": 2,
+        "unit": "teaspoons"
+      },
+      {
+        "name": "egg yolks",
+        "quantity": 2,
+        "unit": "pieces"
+      },
+      {
+        "name": "Gruyère cheese",
+        "quantity": 100,
+        "unit": "grams",
+        "preparation": "grated"
+      },
+      {
+        "name": "fresh tarragon",
+        "quantity": 2,
+        "unit": "tablespoons",
+        "preparation": "chopped"
+      },
+      {
+        "name": "salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "instructions": [
+      "Bring a large pot of salted water to a boil. Add the lobsters and cook for 8-10 minutes until they turn bright red. Remove the lobsters from the pot and let them cool.",
+      "Preheat your oven to 200°C (400°F).",
+      "Once the lobsters are cool enough to handle, remove the meat from the claws and tail, and cut it into bite-sized pieces. Reserve the lobster shells.",
+      "In a large skillet, melt 30 grams of butter over medium heat. Add the shallots and mushrooms, and cook until softened.",
+      "Add the cognac to the skillet and carefully ignite it with a long match or lighter. Allow the flames to die down, then add the white wine and fish stock. Bring the mixture to a boil and reduce the heat, letting it simmer for 10-15 minutes until reduced by half.",
+      "Stir in the heavy cream and continue to simmer the sauce for another 5-7 minutes, or until it thickens slightly. Season with salt and pepper to taste.",
+  "In a small bowl, whisk together the Dijon mustard and egg yolks. Slowly add a small amount of the hot sauce to the egg mixture to temper it. Gradually whisk the tempered egg mixture back into the sauce.",
+  "Gently fold the lobster meat and chopped tarragon into the sauce.",
+  "Place the reserved lobster shells in a shallow baking dish, and spoon the lobster and sauce mixture into the shells.",
+  "In a separate pan, melt the remaining 30 grams of butter and mix it with the grated Gruyère cheese. Sprinkle the cheese mixture evenly over the lobster-filled shells.",
+  "Place the baking dish in the preheated oven and bake for 10-15 minutes, or until the cheese is melted and golden brown.",
+  "Serve the Lobster Thermidor immediately with crusty bread, a green salad, and a glass of fine white wine. Enjoy this extravagant and indulgent French classic."
+],
+"notes": [
+  "To make this recipe even more luxurious, consider adding a few slices of black truffle to the sauce.",
+  "To ensure the lobster remains tender, avoid overcooking it during the initial boiling step.",
+  "If you cannot find Gruyère cheese, you can substitute it with a high-quality Swiss or Comté cheese."
+],
+"tags": [
+  "main course",
+  "lobster",
+  "thermidor",
+  "french",
+  "seafood",
+  "decadent"
+]
+
+}
+};
+

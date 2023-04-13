@@ -707,3 +707,106 @@ const lobsterThermidorRecipe = {
 }
 };
 
+const veganMushroomTrufflePate = {
+  "recipe": {
+    "title": "Mushroom and Truffle Pâté with Toasted Brioche and Microgreens",
+    "author": "Amélie Dubois",
+    "date_published": "2023-04-13",
+    "yield": {
+      "quantity": 4,
+      "unit": "servings"
+    },
+    "prep_time": {
+      "quantity": 20,
+      "unit": "minutes"
+    },
+    "cook_time": {
+      "quantity": 25,
+      "unit": "minutes"
+    },
+    "ingredients": [
+      {
+        "name": "mixed mushrooms",
+        "quantity": 400,
+        "unit": "grams",
+        "preparation": "cleaned and chopped"
+      },
+      {
+        "name": "black truffle",
+        "quantity": 30,
+        "unit": "grams",
+        "preparation": "finely chopped"
+      },
+      {
+        "name": "olive oil",
+        "quantity": 2,
+        "unit": "tablespoons"
+      },
+      {
+        "name": "shallots",
+        "quantity": 2,
+        "unit": "pieces",
+        "preparation": "finely chopped"
+      },
+      {
+        "name": "garlic",
+        "quantity": 2,
+        "unit": "cloves",
+        "preparation": "minced"
+      },
+      {
+        "name": "fresh thyme",
+        "quantity": 1,
+        "unit": "tablespoon",
+        "preparation": "chopped"
+      },
+      {
+        "name": "vegan cream cheese",
+        "quantity": 200,
+        "unit": "grams"
+      },
+      {
+        "name": "vegan brioche",
+        "quantity": 4,
+        "unit": "slices"
+      },
+      {
+        "name": "microgreens",
+        "quantity": 1,
+        "unit": "handful"
+      },
+      {
+        "name": "salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "instructions": [
+      "In a large pan, heat the olive oil over medium heat. Add the shallots and garlic, and sauté until softened and translucent, about 3-5 minutes.",
+      "Add the mixed mushrooms and thyme to the pan, and cook until the mushrooms release their liquid and become tender, about 10-12 minutes. Season with salt and pepper to taste.",
+      "Remove the pan from heat and let the mushroom mixture cool slightly.",
+      "In a food processor, combine the cooled mushroom mixture, vegan cream cheese, and chopped black truffle. Process until smooth and creamy.",
+      "Transfer the pâté to a small serving dish, cover with plastic wrap, and refrigerate for at least 1 hour to allow the flavors to meld.",
+      "When ready to serve, toast the brioche slices until golden brown.",
+      "Spread a generous layer of the mushroom and truffle pâté onto each slice of toasted brioche.",
+      "Garnish with a few microgreens and serve immediately."
+    ],
+    "notes": [
+      "You can use a mix of wild and cultivated mushrooms, such as shiitake, cremini, or oyster mushrooms, for a more complex flavor.",
+      "The pâté can be made a day in advance and stored in the refrigerator, covered tightly.",
+      "If you can't find vegan brioche, you can substitute it with a high-quality vegan sourdough or ciabatta bread."
+    ],
+    "tags": [
+      "vegan",
+      "appetizer",
+      "mushroom",
+      "truffle",
+      "brioche",
+      "microgreens"
+    ]
+  }
+};
+

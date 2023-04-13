@@ -6,6 +6,18 @@ const recipes = [
   { name: "European Apple Pie", data: europeanApplePieRecipe.recipe }
 ];
 
+function getRecipeFromUrl() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const recipeParam = urlParams.get('recipe');
+  if (recipeParam) {
+    const recipeIndex = recipes.findIndex(recipe => recipe.name.toLowerCase() === recipeParam.toLowerCase());
+    if (recipeIndex !== -1) {
+      return recipeIndex;
+    }
+  }
+  return 0; // Default recipe index if not found in the URL
+}
+
 function createIngredientsList(ingredients) {
   const list = document.createElement("ul");
   list.classList.add("list-unstyled");
@@ -32,7 +44,7 @@ function createInstructionsList(instructions) {
   return list;
 }
 
-function displayRecipeDropdown() {
+function displayRecipeDropdown(initialRecipeIndex) {
   const container = document.getElementById("recipe-dropdown");
   const select = document.createElement("select");
   select.classList.add("form-select");
@@ -41,15 +53,31 @@ function displayRecipeDropdown() {
     const option = document.createElement("option");
     option.value = index;
     option.innerText = recipe.name;
+    if (index === initialRecipeIndex) {
+      option.selected = true;
+    }
     select.appendChild(option);
   });
 
   select.addEventListener("change", (e) => {
     const recipeIndex = e.target.value;
     displayRecipe(recipes[recipeIndex].data);
+    window.history.pushState({}, '', `?recipe=${encodeURIComponent(recipes[recipeIndex].name)}`);
   });
 
   container.appendChild(select);
+}
+
+
+
+function copyUrlToClipboard() {
+  const el = document.createElement('textarea');
+  el.value = window.location.href;
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+  alert('Recipe URL copied to clipboard!');
 }
 
 function updateIngredientQuantities(recipe, newQuantity) {
@@ -87,6 +115,16 @@ function displayRecipe(recipe, newYield=null) {
 
   const detailsRow = document.createElement("div");
   detailsRow.classList.add("row", "mb-4");
+  
+    const shareButton = document.createElement("button");
+    shareButton.classList.add("btn", "btn-outline-secondary", "btn-sm", "ms-1", "align-baseline");
+    shareButton.innerHTML = '<i class="fas fa-share"></i> Share';
+    detailsRow.appendChild(shareButton);
+
+    shareButton.addEventListener("click", () => {
+      copyUrlToClipboard();
+    });
+
   container.appendChild(detailsRow);
   
   const yieldInfo = document.createElement("p");
@@ -154,5 +192,6 @@ function displayRecipe(recipe, newYield=null) {
   container.appendChild(instructionsList);
 }
 
-displayRecipeDropdown();
-displayRecipe(recipes[0].data);
+const initialRecipeIndex = getRecipeFromUrl();
+displayRecipeDropdown(initialRecipeIndex);
+displayRecipe(recipes[initialRecipeIndex].data);

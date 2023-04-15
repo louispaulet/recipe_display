@@ -8,6 +8,8 @@ const recipes = [
   
   { name: "Lobster Thermidor", data: lobsterThermidorRecipe.recipe },
   { name: "Vegan mushroom truffle paté", data: veganMushroomTrufflePate.recipe },
+  { name: "Coq au vin", data: coqAuVinRecipe.recipe },
+  { name: "Gratin Dauphinois", data: gratinDauphinois.recipe },
   
   { name: "European Apple Pie", data: europeanApplePieRecipe.recipe }
 ];

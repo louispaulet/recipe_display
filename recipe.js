@@ -810,3 +810,361 @@ const veganMushroomTrufflePate = {
   }
 };
 
+
+
+const coqAuVinRecipe = {
+  "recipe": {
+    "title": "Coq au Vin",
+    "author": "Jane Doe",
+    "date_published": "2023-04-14",
+    "yield": {
+      "quantity": 6,
+      "unit": "servings"
+    },
+    "prep_time": {
+      "quantity": 30,
+      "unit": "minutes"
+    },
+    "cook_time": {
+      "quantity": 180,
+      "unit": "minutes"
+    },
+    "ingredients": [
+      {
+        "name": "chicken",
+        "quantity": 1,
+        "unit": "whole",
+        "preparation": "cut into pieces"
+      },
+      {
+        "name": "bacon",
+        "quantity": 6,
+        "unit": "ounces",
+        "preparation": "cut into lardons"
+      },
+      {
+        "name": "pearl onions",
+        "quantity": 1,
+        "unit": "cup",
+        "preparation": "peeled"
+      },
+      {
+        "name": "button mushrooms",
+        "quantity": 1,
+        "unit": "cup",
+        "preparation": "cleaned and halved"
+      },
+      {
+        "name": "red wine",
+        "quantity": 3,
+        "unit": "cups"
+      },
+      {
+        "name": "chicken stock",
+        "quantity": 2,
+        "unit": "cups"
+      },
+      {
+        "name": "garlic",
+        "quantity": 3,
+        "unit": "cloves",
+        "preparation": "minced"
+      },
+      {
+        "name": "tomato paste",
+        "quantity": 2,
+        "unit": "tablespoons"
+      },
+      {
+        "name": "all-purpose flour",
+        "quantity": 2,
+        "unit": "tablespoons"
+      },
+      {
+        "name": "butter",
+        "quantity": 2,
+        "unit": "tablespoons"
+      },
+      {
+        "name": "olive oil",
+        "quantity": 2,
+        "unit": "tablespoons"
+      },
+      {
+        "name": "fresh thyme",
+        "quantity": 4,
+        "unit": "sprigs"
+      },
+      {
+        "name": "bay leaf",
+        "quantity": 1,
+        "unit": "piece"
+      },
+      {
+        "name": "salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "instructions": [
+      "In a large Dutch oven, heat the olive oil over medium heat. Add the bacon and cook until crispy. Remove the bacon and set aside.",
+      "Season the chicken pieces with salt and pepper. Add them to the Dutch oven and cook until browned on all sides. Remove the chicken and set aside.",
+      "Add the pearl onions and mushrooms to the Dutch oven and cook until lightly browned. Remove them and set aside.",
+      "Add the garlic to the Dutch oven and cook for 1 minute. Stir in the flour and tomato paste, and cook for an additional 2 minutes.",
+      "Deglaze the Dutch oven with the red wine, scraping up any browned bits from the bottom of the pot.",
+      "Add the chicken stock, thyme, bay leaf, and the reserved chicken pieces and bacon to the Dutch oven. Bring to a boil, then reduce the heat and let it simmer, covered, for 1 hour and 30 minutes.",
+"Add the reserved pearl onions and mushrooms to the Dutch oven and continue to cook for another 30 minutes.",
+"In a small saucepan, melt the butter and whisk in the flour. Cook for 1 minute, then add the mixture to the Dutch oven to thicken the sauce.",
+"Remove the thyme sprigs and bay leaf from the pot.",
+"Serve the Coq au Vin over mashed potatoes or with crusty bread."
+],
+"notes": [
+"Choose a full-bodied red wine, such as a Burgundy or a Pinot Noir, for the best flavor.",
+"You can also add a few chopped carrots to the stew for extra color and flavor."
+],
+"tags": [
+"main course",
+"chicken",
+"bacon",
+"red wine",
+"pearl onions",
+"mushrooms"
+]
+}
+};
+
+const gratinDauphinois = {
+  "recipe": {
+    "title": "Gratin Dauphinois",
+    "author": "Jane Doe",
+    "date_published": "2023-04-14",
+    "yield": {
+      "quantity": 6,
+      "unit": "servings"
+    },
+    "prep_time": {
+      "quantity": 20,
+      "unit": "minutes"
+    },
+    "cook_time": {
+      "quantity": 90,
+      "unit": "minutes"
+    },
+    "ingredients": [
+      {
+        "name": "potatoes",
+        "quantity": 1.2,
+        "unit": "kg",
+        "preparation": "peeled and thinly sliced"
+      },
+      {
+        "name": "heavy cream",
+        "quantity": 600,
+        "unit": "ml"
+      },
+      {
+        "name": "whole milk",
+        "quantity": 300,
+        "unit": "ml"
+      },
+      {
+        "name": "garlic",
+        "quantity": 2,
+        "unit": "cloves",
+        "preparation": "minced"
+      },
+      {
+        "name": "grated nutmeg",
+        "quantity": 0.25,
+        "unit": "teaspoon"
+      },
+      {
+        "name": "unsalted butter",
+        "quantity": 25,
+        "unit": "g",
+        "preparation": "softened"
+      },
+      {
+        "name": "Gruyère cheese",
+        "quantity": 150,
+        "unit": "g",
+        "preparation": "grated"
+      },
+      {
+        "name": "salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "pepper",
+        "quantity": "to taste"
+      }
+    ],
+    "instructions": [
+      "Preheat the oven to 160°C.",
+      "In a large saucepan, combine the heavy cream, milk, garlic, nutmeg, salt, and pepper. Bring the mixture to a simmer over medium heat.",
+      "Add the sliced potatoes to the saucepan and cook for 10 minutes, stirring occasionally to prevent sticking.",
+      "Grease a 33x23 cm baking dish with the softened butter.",
+      "Using a slotted spoon, transfer the potato slices to the prepared baking dish, arranging them in an even layer.",
+      "Pour the remaining cream mixture over the potatoes, ensuring they are fully covered.",
+      "Sprinkle the grated Gruyère cheese evenly over the top of the potatoes.",
+      "Bake the Gratin Dauphinois for 1 hour and 30 minutes, or until the potatoes are tender and the top is golden brown.",
+    "Allow the Gratin Dauphinois to rest for 10 minutes before serving.",
+    "Serve the Gratin Dauphinois as a side dish with roasted meats or grilled vegetables."
+    ],
+    "notes": [
+    "For a creamier texture, you can use a mix of heavy cream and crème fraîche instead of the milk.",
+    "Experiment with different types of cheese, such as Comté or Emmental, for a unique flavor."
+    ],
+    "tags": [
+    "side dish",
+    "potatoes",
+    "gratin",
+    "cheese",
+    "cream"
+    ]
+    }
+};
+
+
+const bouillabaisse = {
+    
+  "recipe": {
+    "title": "Bouillabaisse",
+    "author": "Jane Doe",
+    "date_published": "2023-04-14",
+    "yield": {
+      "quantity": 6,
+      "unit": "servings"
+    },
+    "prep_time": {
+      "quantity": 30,
+      "unit": "minutes"
+    },
+    "cook_time": {
+      "quantity": 90,
+      "unit": "minutes"
+    },
+    "ingredients": [
+      {
+        "name": "mixed firm white fish",
+        "quantity": 1,
+        "unit": "kg",
+        "preparation": "cut into large chunks"
+      },
+      {
+        "name": "mixed shellfish",
+        "quantity": 500,
+        "unit": "g",
+        "preparation": "cleaned"
+      },
+      {
+        "name": "olive oil",
+        "quantity": 60,
+        "unit": "ml"
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "large",
+        "preparation": "chopped"
+      },
+      {
+        "name": "leeks",
+        "quantity": 2,
+        "unit": "medium",
+        "preparation": "cleaned and chopped"
+      },
+      {
+        "name": "fennel bulb",
+        "quantity": 1,
+        "unit": "medium",
+        "preparation": "chopped"
+      },
+      {
+        "name": "garlic",
+        "quantity": 4,
+        "unit": "cloves",
+        "preparation": "minced"
+      },
+      {
+        "name": "tomatoes",
+        "quantity": 800,
+        "unit": "g",
+        "preparation": "canned, chopped"
+      },
+      {
+        "name": "fish stock",
+        "quantity": 1.5,
+        "unit": "liters"
+      },
+      {
+        "name": "saffron",
+        "quantity": 0.25,
+        "unit": "teaspoon"
+      },
+      {
+        "name": "orange zest",
+        "quantity": 1,
+        "unit": "teaspoon"
+      },
+      {
+        "name": "bay leaf",
+        "quantity": 1,
+        "unit": "piece"
+      },
+      {
+        "name": "fresh thyme",
+        "quantity": 2,
+        "unit": "sprigs"
+      },
+      {
+        "name": "Pernod",
+        "quantity": 60,
+        "unit": "ml"
+      },
+      {
+        "name": "salt",
+        "quantity": "to taste"
+      },
+      {
+        "name": "pepper",
+        "quantity": "to taste"
+        },
+{
+"name": "rouille",
+"quantity": 1,
+"unit": "recipe",
+"preparation": "prepared"
+},
+{
+"name": "crusty bread",
+"quantity": 1,
+"unit": "loaf",
+"preparation": "sliced"
+}
+],
+"instructions": [
+"In a large pot or Dutch oven, heat the olive oil over medium heat. Add the onion, leeks, fennel, and garlic, and cook until softened, about 10 minutes.",
+"Add the tomatoes, fish stock, saffron, orange zest, bay leaf, and thyme sprigs to the pot. Bring to a boil, then reduce the heat and let it simmer for 30 minutes.",
+"Strain the soup through a fine mesh strainer, discarding the solids. Return the strained soup to the pot.",
+"Add the fish chunks and shellfish to the soup. Cover and cook for 10 minutes, or until the fish is cooked through and the shellfish have opened.",
+"Stir in the Pernod and season with salt and pepper to taste.",
+"Serve the Bouillabaisse in large bowls, accompanied by rouille and crusty bread."
+],
+"notes": [
+"For a more traditional presentation, you can serve the fish and shellfish on a separate platter, with the broth poured over them at the table.",
+"Feel free to use any combination of white fish and shellfish, such as cod, haddock, monkfish, clams, mussels, or shrimp."
+],
+"tags": [
+"main course",
+"fish",
+"shellfish",
+"soup",
+"stew"
+]
+}
+};
+

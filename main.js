@@ -115,6 +115,46 @@ function clearRecipeContainer() {
   }
 }
 
+function createNotesSection(notes) {
+  const container = document.createElement("div");
+  const header = document.createElement("h2");
+  header.classList.add("mb-3");
+  header.innerHTML = `<i class="fas fa-lightbulb me-2"></i>Notes`;
+  container.appendChild(header);
+
+  const list = document.createElement("ul");
+  list.classList.add("list-unstyled");
+  notes.forEach(note => {
+    const listItem = document.createElement("li");
+    listItem.innerHTML = `<i class="fas fa-info-circle me-2"></i>${note}`;
+    list.appendChild(listItem);
+  });
+  container.appendChild(list);
+
+  return container;
+}
+
+// Add this new function to create the tags section
+function createTagsSection(tags) {
+  const container = document.createElement("div");
+  const header = document.createElement("h2");
+  header.classList.add("mb-3");
+  header.innerHTML = `<i class="fas fa-tags me-2"></i>Tags`;
+  container.appendChild(header);
+
+  const list = document.createElement("ul");
+  list.classList.add("list-inline");
+  tags.forEach(tag => {
+    const listItem = document.createElement("li");
+    listItem.classList.add("list-inline-item", "me-3");
+    listItem.innerHTML = `<span class="badge bg-secondary">${tag}</span>`;
+    list.appendChild(listItem);
+  });
+  container.appendChild(list);
+
+  return container;
+}
+
 function displayRecipe(recipe, newYield=null) {
   clearRecipeContainer();
   
@@ -211,6 +251,17 @@ function displayRecipe(recipe, newYield=null) {
 
   const instructionsList = createInstructionsList(recipe.instructions);
   container.appendChild(instructionsList);
+  
+  // Add the new notes and tags sections if they exist
+  if (recipe.notes && recipe.notes.length > 0) {
+    const notesSection = createNotesSection(recipe.notes);
+    container.appendChild(notesSection);
+  }
+
+  if (recipe.tags && recipe.tags.length > 0) {
+    const tagsSection = createTagsSection(recipe.tags);
+    container.appendChild(tagsSection);
+  }
 }
 
 const initialRecipeIndex = getRecipeFromUrl();
